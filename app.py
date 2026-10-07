@@ -23,7 +23,13 @@ from pypdf import PdfReader
 # --------------------------------------------------------------------------- #
 # Configuration
 # --------------------------------------------------------------------------- #
-MODEL_OPTIONS = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-latest"]
+MODEL_OPTIONS = [
+    "gemini-flash-latest",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash",
+    "gemini-3.6-flash",
+]
 MAX_RESUME_CHARS = 15000   # keeps prompts small and fast
 MAX_JD_CHARS = 6000
 MIN_TEXT_CHARS = 200       # below this we assume a scanned / image-only file
